@@ -23,6 +23,7 @@ public class CatLandsModItems {
 	public static final RegistryObject<Item> KOTEGOLDENGOLEM_SPAWN_EGG = REGISTRY.register("kotegoldengolem_spawn_egg", () -> new ForgeSpawnEggItem(CatLandsModEntities.KOTEGOLDENGOLEM, -11053225, -410082, new Item.Properties()));
 	public static final RegistryObject<Item> STAR_BLOSSOM = block(CatLandsModBlocks.STAR_BLOSSOM);
 	public static final RegistryObject<Item> ANGEL_KITTEN_SPAWN_EGG = REGISTRY.register("angel_kitten_spawn_egg", () -> new ForgeSpawnEggItem(CatLandsModEntities.ANGEL_KITTEN, -668382, -73402, new Item.Properties()));
+	public static final RegistryObject<Item> BIG_SHINY_BRICK = block(CatLandsModBlocks.BIG_SHINY_BRICK, new Item.Properties().fireResistant());
 
 	// Start of user code block custom items
 	// End of user code block custom items

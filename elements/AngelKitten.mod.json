@@ -82,8 +82,9 @@
       "fixedValue": true
     },
     "flyingMob": true,
-    "inventorySize": 9,
-    "inventoryStackSize": 99,
+    "guiBoundTo": "KittenGui",
+    "inventorySize": 7,
+    "inventoryStackSize": 64,
     "disableCollisions": false,
     "ridable": false,
     "canControlForward": false,

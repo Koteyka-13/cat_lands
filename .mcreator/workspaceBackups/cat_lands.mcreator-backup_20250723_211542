@@ -38,7 +38,6 @@
       "registry_name": "shinybrickresipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/cat_lands/advancements/recipes/shinybrickresipe.json",
           "src/main/resources/data/cat_lands/recipes/shinybrickresipe.json"
         ]
       }
@@ -194,6 +193,73 @@
           "src/main/resources/data/cat_lands/advancements/intrestingplase.json"
         ]
       }
+    },
+    {
+      "name": "Whobildthis",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "whobildthis",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cat_lands/advancements/whobildthis.json"
+        ]
+      }
+    },
+    {
+      "name": "WhatAboutGolems",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "what_about_golems",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cat_lands/advancements/what_about_golems.json"
+        ]
+      }
+    },
+    {
+      "name": "AngelKitten",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "angel_kitten",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/catlands/entity/AngelKittenEntity.java",
+          "src/main/resources/assets/cat_lands/models/item/angel_kitten_spawn_egg.json",
+          "src/main/java/net/mcreator/catlands/client/renderer/AngelKittenRenderer.java",
+          "src/main/resources/data/cat_lands/forge/biome_modifier/angel_kitten_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "BigShinyBrick",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_shiny_brick",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cat_lands/loot_tables/blocks/big_shiny_brick.json",
+          "src/main/resources/assets/cat_lands/models/block/big_shiny_brick.json",
+          "src/main/resources/assets/cat_lands/models/item/big_shiny_brick.json",
+          "src/main/java/net/mcreator/catlands/block/BigShinyBrickBlock.java",
+          "src/main/resources/assets/cat_lands/blockstates/big_shiny_brick.json"
+        ]
+      }
+    },
+    {
+      "name": "BigShinybrickresipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_shinybrickresipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cat_lands/recipes/big_shinybrickresipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -203,6 +269,7 @@
       "~CUSTOM:Catlands"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:BigShinyBrick",
       "~CUSTOM:Shinybrick"
     ],
     "BIOMES:minecraft:has_structure/stronghold": [
@@ -218,27 +285,41 @@
       "biome.cat_lands.catlands": "Catlands",
       "block.cat_lands.shinybrick": "Shinybrick",
       "entity.cat_lands.kotegolem": "Kotegolem",
-      "item.cat_lands.artifact": "Revive artifact",
+      "item.cat_lands.artifact": "Golem maker",
       "item.cat_lands.artifact.description_0": "Making a golems (use on precious block)",
       "item.cat_lands.kotegolem_spawn_egg": "Kotegolem Spawn Egg",
       "entity.cat_lands.kotegoldengolem": "Kotegolem",
       "item.cat_lands.kotegoldengolem_spawn_egg": "Kotegolem Spawn Egg",
       "block.cat_lands.star_blossom": "Star Blossom",
       "advancements.intrestingplase.descr": "Welcome to catlatds",
-      "advancements.intrestingplase.title": "A wonderful plase"
+      "advancements.intrestingplase.title": "A wonderful plase",
+      "advancements.whobildthis.descr": "Visit the sanctuary",
+      "advancements.whobildthis.title": "Who bild this?",
+      "advancements.what_about_golems.descr": "Make a golem maker!",
+      "advancements.what_about_golems.title": "What about Golems?",
+      "item.cat_lands.angel_kitten_spawn_egg": "Angel Kitten Spawn Egg",
+      "entity.cat_lands.angel_kitten": "Angel Kitten",
+      "block.cat_lands.big_shiny_brick": "Big Shiny Brick"
     },
     "ru_ru": {
       "biome.cat_lands.catlands": "Catlands",
       "block.cat_lands.shinybrick": "Shinybrick",
       "entity.cat_lands.kotegolem": "Kotegolem",
-      "item.cat_lands.artifact": "Revive artifact",
+      "item.cat_lands.artifact": "Golem maker",
       "item.cat_lands.artifact.description_0": "Making a golems (use on precious block)",
       "item.cat_lands.kotegolem_spawn_egg": "Kotegolem Spawn Egg",
       "entity.cat_lands.kotegoldengolem": "Kotegolem",
       "item.cat_lands.kotegoldengolem_spawn_egg": "Kotegolem Spawn Egg",
       "block.cat_lands.star_blossom": "Star Blossom",
       "advancements.intrestingplase.descr": "Welcome to catlatds",
-      "advancements.intrestingplase.title": "A wonderful plase"
+      "advancements.intrestingplase.title": "A wonderful plase",
+      "advancements.whobildthis.descr": "Visit the sanctuary",
+      "advancements.whobildthis.title": "Who bild this?",
+      "advancements.what_about_golems.descr": "Make a golem maker!",
+      "advancements.what_about_golems.title": "What about Golems?",
+      "item.cat_lands.angel_kitten_spawn_egg": "Angel Kitten Spawn Egg",
+      "entity.cat_lands.angel_kitten": "Angel Kitten",
+      "block.cat_lands.big_shiny_brick": "Big Shiny Brick"
     }
   },
   "metadata": {

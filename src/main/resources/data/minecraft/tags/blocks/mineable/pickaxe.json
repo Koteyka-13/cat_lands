@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "cat_lands:big_shiny_brick",
     "cat_lands:shinybrick"
   ]
 }

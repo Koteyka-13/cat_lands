@@ -15,5 +15,7 @@
   "advancements.what_about_golems.descr": "Make a golem maker!",
   "advancements.what_about_golems.title": "What about Golems?",
   "item.cat_lands.angel_kitten_spawn_egg": "Angel Kitten Spawn Egg",
-  "entity.cat_lands.angel_kitten": "Angel Kitten"
+  "entity.cat_lands.angel_kitten": "Angel Kitten",
+  "block.cat_lands.big_shiny_brick": "Big Shiny Brick",
+  "gui.cat_lands.kitten_gui.label_angel_kittens_inventory": "Angel kitten\u0027s inventory"
 }

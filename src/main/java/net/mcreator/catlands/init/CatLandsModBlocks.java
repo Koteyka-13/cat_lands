@@ -11,12 +11,14 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.catlands.block.StarBlossomBlock;
 import net.mcreator.catlands.block.ShinybrickBlock;
+import net.mcreator.catlands.block.BigShinyBrickBlock;
 import net.mcreator.catlands.CatLandsMod;
 
 public class CatLandsModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, CatLandsMod.MODID);
 	public static final RegistryObject<Block> SHINYBRICK = REGISTRY.register("shinybrick", () -> new ShinybrickBlock());
 	public static final RegistryObject<Block> STAR_BLOSSOM = REGISTRY.register("star_blossom", () -> new StarBlossomBlock());
+	public static final RegistryObject<Block> BIG_SHINY_BRICK = REGISTRY.register("big_shiny_brick", () -> new BigShinyBrickBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

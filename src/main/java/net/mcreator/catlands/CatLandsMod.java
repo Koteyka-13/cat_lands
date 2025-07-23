@@ -18,6 +18,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.catlands.init.CatLandsModTabs;
+import net.mcreator.catlands.init.CatLandsModMenus;
 import net.mcreator.catlands.init.CatLandsModItems;
 import net.mcreator.catlands.init.CatLandsModEntities;
 import net.mcreator.catlands.init.CatLandsModBlocks;
@@ -48,6 +49,8 @@ public class CatLandsMod {
 		CatLandsModEntities.REGISTRY.register(bus);
 
 		CatLandsModTabs.REGISTRY.register(bus);
+
+		CatLandsModMenus.REGISTRY.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

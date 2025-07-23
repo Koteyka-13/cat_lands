@@ -22,6 +22,7 @@ public class CatLandsModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(CatLandsModBlocks.SHINYBRICK.get().asItem());
+			tabData.accept(CatLandsModBlocks.BIG_SHINY_BRICK.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(CatLandsModItems.KOTEGOLEM_SPAWN_EGG.get());
 			tabData.accept(CatLandsModItems.KOTEGOLDENGOLEM_SPAWN_EGG.get());

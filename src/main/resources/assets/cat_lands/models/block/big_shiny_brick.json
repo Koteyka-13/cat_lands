@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cat_lands:block/bigshinybrick",
+    "up": "cat_lands:block/bigshinybrick",
+    "north": "cat_lands:block/bigshinybrick",
+    "east": "cat_lands:block/bigshinybrick",
+    "south": "cat_lands:block/bigshinybrick",
+    "west": "cat_lands:block/bigshinybrick",
+    "particle": "cat_lands:block/bigshinybrick"
+  },
+  "render_type": "solid"
+}
