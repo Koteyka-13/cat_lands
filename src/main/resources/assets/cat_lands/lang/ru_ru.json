@@ -1,0 +1,19 @@
+{
+  "biome.cat_lands.catlands": "Catlands",
+  "block.cat_lands.shinybrick": "Shinybrick",
+  "entity.cat_lands.kotegolem": "Kotegolem",
+  "item.cat_lands.artifact": "Golem maker",
+  "item.cat_lands.artifact.description_0": "Making a golems (use on precious block)",
+  "item.cat_lands.kotegolem_spawn_egg": "Kotegolem Spawn Egg",
+  "entity.cat_lands.kotegoldengolem": "Kotegolem",
+  "item.cat_lands.kotegoldengolem_spawn_egg": "Kotegolem Spawn Egg",
+  "block.cat_lands.star_blossom": "Star Blossom",
+  "advancements.intrestingplase.descr": "Welcome to catlatds",
+  "advancements.intrestingplase.title": "A wonderful plase",
+  "advancements.whobildthis.descr": "Visit the sanctuary",
+  "advancements.whobildthis.title": "Who bild this?",
+  "advancements.what_about_golems.descr": "Make a golem maker!",
+  "advancements.what_about_golems.title": "What about Golems?",
+  "item.cat_lands.angel_kitten_spawn_egg": "Angel Kitten Spawn Egg",
+  "entity.cat_lands.angel_kitten": "Angel Kitten"
+}

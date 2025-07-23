@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "cat_lands:catlands",
+  "spawners": {
+    "type": "cat_lands:angel_kitten",
+    "weight": 20,
+    "minCount": 2,
+    "maxCount": 6
+  }
+}

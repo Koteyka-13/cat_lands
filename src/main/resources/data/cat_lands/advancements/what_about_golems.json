@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "cat_lands:artifact"
+    },
+    "title": {
+      "translate": "advancements.what_about_golems.title"
+    },
+    "description": {
+      "translate": "advancements.what_about_golems.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "what_about_golems_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cat_lands:artifact"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "cat_lands:intrestingplase"
+}

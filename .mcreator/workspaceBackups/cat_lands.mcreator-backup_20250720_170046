@@ -1,0 +1,310 @@
+{
+  "mod_elements": [
+    {
+      "name": "Catlands",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "catlands",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cat_lands/worldgen/biome/catlands.json",
+          "src/main/resources/data/cat_lands/worldgen/configured_feature/catlands_tree.json",
+          "src/main/resources/data/cat_lands/worldgen/placed_feature/catlands_tree.json"
+        ]
+      }
+    },
+    {
+      "name": "Shinybrick",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shinybrick",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cat_lands/blockstates/shinybrick.json",
+          "src/main/resources/assets/cat_lands/models/block/shinybrick.json",
+          "src/main/resources/assets/cat_lands/models/item/shinybrick.json",
+          "src/main/java/net/mcreator/catlands/block/ShinybrickBlock.java",
+          "src/main/resources/data/cat_lands/loot_tables/blocks/shinybrick.json"
+        ]
+      }
+    },
+    {
+      "name": "Shinybrickresipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shinybrickresipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cat_lands/recipes/shinybrickresipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Sanctuary",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sanctuary",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cat_lands/worldgen/structure/sanctuary.json",
+          "src/main/resources/data/cat_lands/worldgen/template_pool/sanctuary.json",
+          "src/main/resources/data/cat_lands/worldgen/structure_set/sanctuary.json"
+        ]
+      }
+    },
+    {
+      "name": "Sanctuaryloot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sanctuaryloot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_tables/chests/sanctuaryloot.json"
+        ]
+      }
+    },
+    {
+      "name": "Kotegolem",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kotegolem",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cat_lands/models/item/kotegolem_spawn_egg.json",
+          "src/main/java/net/mcreator/catlands/client/renderer/KotegolemRenderer.java",
+          "src/main/resources/data/cat_lands/forge/biome_modifier/kotegolem_biome_modifier.json",
+          "src/main/java/net/mcreator/catlands/entity/KotegolemEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "KoteCopperGolemSpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kote_copper_golem_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/catlands/procedures/KoteCopperGolemSpawnProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Artifact",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "artifact",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/catlands/item/ArtifactItem.java",
+          "src/main/resources/assets/cat_lands/models/item/artifact.json"
+        ]
+      }
+    },
+    {
+      "name": "Kotegoldengolem",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kotegoldengolem",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cat_lands/forge/biome_modifier/kotegoldengolem_biome_modifier.json",
+          "src/main/java/net/mcreator/catlands/entity/KotegoldengolemEntity.java",
+          "src/main/resources/assets/cat_lands/models/item/kotegoldengolem_spawn_egg.json",
+          "src/main/java/net/mcreator/catlands/client/renderer/KotegoldengolemRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "Artifactresipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "artifactresipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cat_lands/advancements/recipes/artifactresipe.json",
+          "src/main/resources/data/cat_lands/recipes/artifactresipe.json"
+        ]
+      }
+    },
+    {
+      "name": "StarBlossom",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "star_blossom",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/catlands/block/StarBlossomBlock.java",
+          "src/main/resources/data/cat_lands/loot_tables/blocks/star_blossom.json",
+          "src/main/resources/assets/cat_lands/models/block/star_blossom.json",
+          "src/main/resources/assets/cat_lands/blockstates/star_blossom.json",
+          "src/main/resources/assets/cat_lands/models/item/star_blossom.json"
+        ]
+      }
+    },
+    {
+      "name": "Stardust",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stardust",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cat_lands/recipes/stardust.json"
+        ]
+      }
+    },
+    {
+      "name": "Intrestingplase",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "intrestingplase",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cat_lands/advancements/intrestingplase.json"
+        ]
+      }
+    },
+    {
+      "name": "Whobildthis",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "whobildthis",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cat_lands/advancements/whobildthis.json"
+        ]
+      }
+    },
+    {
+      "name": "WhatAboutGolems",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "what_about_golems",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cat_lands/advancements/what_about_golems.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "BIOMES:minecraft:has_structure/nether_fossil": [
+      "~CUSTOM:Catlands"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Shinybrick"
+    ],
+    "BIOMES:minecraft:has_structure/stronghold": [
+      "~CUSTOM:Catlands"
+    ],
+    "BIOMES:minecraft:has_structure/ruined_portal_standard": [
+      "~CUSTOM:Catlands"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "biome.cat_lands.catlands": "Catlands",
+      "block.cat_lands.shinybrick": "Shinybrick",
+      "entity.cat_lands.kotegolem": "Kotegolem",
+      "item.cat_lands.artifact": "Golem maker",
+      "item.cat_lands.artifact.description_0": "Making a golems (use on precious block)",
+      "item.cat_lands.kotegolem_spawn_egg": "Kotegolem Spawn Egg",
+      "entity.cat_lands.kotegoldengolem": "Kotegolem",
+      "item.cat_lands.kotegoldengolem_spawn_egg": "Kotegolem Spawn Egg",
+      "block.cat_lands.star_blossom": "Star Blossom",
+      "advancements.intrestingplase.descr": "Welcome to catlatds",
+      "advancements.intrestingplase.title": "A wonderful plase",
+      "advancements.whobildthis.descr": "Visit the sanctuary",
+      "advancements.whobildthis.title": "Who bild this?",
+      "advancements.what_about_golems.descr": "Make a golem maker!",
+      "advancements.what_about_golems.title": "What about Golems?"
+    },
+    "ru_ru": {
+      "biome.cat_lands.catlands": "Catlands",
+      "block.cat_lands.shinybrick": "Shinybrick",
+      "entity.cat_lands.kotegolem": "Kotegolem",
+      "item.cat_lands.artifact": "Golem maker",
+      "item.cat_lands.artifact.description_0": "Making a golems (use on precious block)",
+      "item.cat_lands.kotegolem_spawn_egg": "Kotegolem Spawn Egg",
+      "entity.cat_lands.kotegoldengolem": "Kotegolem",
+      "item.cat_lands.kotegoldengolem_spawn_egg": "Kotegolem Spawn Egg",
+      "block.cat_lands.star_blossom": "Star Blossom",
+      "advancements.intrestingplase.descr": "Welcome to catlatds",
+      "advancements.intrestingplase.title": "A wonderful plase",
+      "advancements.whobildthis.descr": "Visit the sanctuary",
+      "advancements.whobildthis.title": "Who bild this?",
+      "advancements.what_about_golems.descr": "Make a golem maker!",
+      "advancements.what_about_golems.title": "What about Golems?"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/net/mcreator/catlands/init/CatLandsModModels.java",
+      "src/main/java/net/mcreator/catlands/CatLandsMod.java",
+      "src/main/java/net/mcreator/catlands/init/CatLandsModTabs.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/catlands/init/CatLandsModBiomes.java",
+      "src/main/java/net/mcreator/catlands/init/CatLandsModBlocks.java",
+      "src/main/java/net/mcreator/catlands/init/CatLandsModItems.java",
+      "src/main/java/net/mcreator/catlands/init/CatLandsModEntities.java",
+      "src/main/java/net/mcreator/catlands/init/CatLandsModEntityRenderers.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "cat_lands",
+    "modName": "Cat_lands",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "net.mcreator.catlands"
+  },
+  "mcreatorVersion": 202500228610
+}

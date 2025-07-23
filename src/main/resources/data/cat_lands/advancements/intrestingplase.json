@@ -1,0 +1,36 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "minecraft:cherry_sapling"
+    },
+    "title": {
+      "translate": "advancements.intrestingplase.title"
+    },
+    "description": {
+      "translate": "advancements.intrestingplase.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "intrestingplase_0": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "cat_lands:catlands"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

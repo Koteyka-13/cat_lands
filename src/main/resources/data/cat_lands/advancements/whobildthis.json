@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "item": "cat_lands:shinybrick"
+    },
+    "title": {
+      "translate": "advancements.whobildthis.title"
+    },
+    "description": {
+      "translate": "advancements.whobildthis.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "whobildthis_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cat_lands:shinybrick"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "cat_lands:shinybrickresipe"
+    ]
+  },
+  "parent": "cat_lands:intrestingplase"
+}

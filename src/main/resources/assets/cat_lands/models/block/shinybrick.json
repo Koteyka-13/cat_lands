@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cat_lands:block/shiny_brick",
+    "up": "cat_lands:block/shiny_brick",
+    "north": "cat_lands:block/shiny_brick",
+    "east": "cat_lands:block/shiny_brick",
+    "south": "cat_lands:block/shiny_brick",
+    "west": "cat_lands:block/shiny_brick",
+    "particle": "cat_lands:block/shiny_brick"
+  },
+  "render_type": "solid"
+}

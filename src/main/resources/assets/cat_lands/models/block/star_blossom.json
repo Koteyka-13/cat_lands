@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "cat_lands:block/star_blossom",
+    "particle": "cat_lands:block/star_blossom"
+  },
+  "render_type": "cutout"
+}

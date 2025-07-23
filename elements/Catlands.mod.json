@@ -1,0 +1,197 @@
+{
+  "_fv": 79,
+  "_type": "biome",
+  "definition": {
+    "name": "Catlands",
+    "groundBlock": {
+      "value": "Blocks.GRASS"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.DIRT#0"
+    },
+    "underwaterBlock": {
+      "value": "Blocks.GRAVEL"
+    },
+    "airColor": {
+      "value": -12192513,
+      "falpha": 0.0
+    },
+    "fogColor": {
+      "value": -11613257,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -12189845,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -12189845,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -12211969,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": true,
+    "particleToSpawn": {
+      "value": "SPORE_BLOSSOM_AIR"
+    },
+    "particlesProbability": 70.0,
+    "rainingPossibility": 0.19999999999999998,
+    "temperature": 1.0,
+    "spawnBiome": true,
+    "spawnInCaves": false,
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": -0.5,
+      "max": 1.0
+    },
+    "genHumidity": {
+      "min": -0.3,
+      "max": 0.5
+    },
+    "genContinentalness": {
+      "min": 0.3,
+      "max": 1.0
+    },
+    "genErosion": {
+      "min": -0.5,
+      "max": 0.5
+    },
+    "genWeirdness": {
+      "min": -1.0,
+      "max": 1.0
+    },
+    "treesPerChunk": 1,
+    "vanillaTreeType": "Birch trees",
+    "treeType": 1,
+    "minHeight": 10,
+    "treeStem": {
+      "value": "Blocks.LOG#2"
+    },
+    "treeBranch": {
+      "value": "Blocks.LEAVES#2"
+    },
+    "treeVines": {
+      "value": ""
+    },
+    "treeFruits": {
+      "value": ""
+    },
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "FrozenTopLayer",
+      "PlainsTallGrass",
+      "JungleGrass",
+      "ForestFlowers"
+    ],
+    "spawnStronghold": true,
+    "spawnMineshaft": false,
+    "spawnMineshaftMesa": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnSwampHut": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "spawnShipwreckBeached": false,
+    "spawnBuriedTreasure": false,
+    "oceanRuinType": "NONE",
+    "spawnNetherBridge": false,
+    "spawnNetherFossil": true,
+    "spawnBastionRemnant": false,
+    "spawnEndCity": false,
+    "spawnRuinedPortal": "STANDARD",
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "EntitySheep"
+        },
+        "minGroup": 3,
+        "maxGroup": 5,
+        "weight": 40,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "EntityAllay"
+        },
+        "minGroup": 2,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "EntitySpider"
+        },
+        "minGroup": 4,
+        "maxGroup": 6,
+        "weight": 16,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityCat"
+        },
+        "minGroup": 3,
+        "maxGroup": 8,
+        "weight": 50,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "EntityTropicalFish"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 30,
+        "spawnType": "waterCreature"
+      },
+      {
+        "entity": {
+          "value": "EntityLlama"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "EntityEnderman"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 14,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:AngelKitten"
+        },
+        "minGroup": 2,
+        "maxGroup": 6,
+        "weight": 20,
+        "spawnType": "monster"
+      }
+    ]
+  }
+}
