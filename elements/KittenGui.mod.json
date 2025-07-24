@@ -40,8 +40,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": false,
-          "x": 169,
-          "y": 59,
+          "x": 168,
+          "y": 62,
           "locked": false
         }
       },
@@ -59,8 +59,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 187,
-          "y": 59,
+          "x": 186,
+          "y": 62,
           "locked": false
         }
       },
@@ -78,8 +78,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 205,
-          "y": 59,
+          "x": 204,
+          "y": 62,
           "locked": false
         }
       },
@@ -97,8 +97,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 223,
-          "y": 59,
+          "x": 222,
+          "y": 62,
           "locked": false
         }
       },
@@ -116,8 +116,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 241,
-          "y": 59,
+          "x": 240,
+          "y": 62,
           "locked": false
         }
       },
@@ -135,8 +135,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 169,
-          "y": 77,
+          "x": 168,
+          "y": 80,
           "locked": false
         }
       },
@@ -154,8 +154,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 187,
-          "y": 77,
+          "x": 186,
+          "y": 80,
           "locked": false
         }
       },
@@ -173,8 +173,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 205,
-          "y": 77,
+          "x": 204,
+          "y": 80,
           "locked": false
         }
       },
@@ -192,8 +192,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 223,
-          "y": 77,
+          "x": 222,
+          "y": 80,
           "locked": false
         }
       },
@@ -211,8 +211,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 241,
-          "y": 77,
+          "x": 240,
+          "y": 80,
           "locked": false
         }
       }
@@ -222,7 +222,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }

@@ -10,8 +10,11 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ThrownPotion;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.monster.ZombifiedPiglin;
 import net.minecraft.world.entity.monster.ZombieVillager;
 import net.minecraft.world.entity.monster.Zombie;
+import net.minecraft.world.entity.monster.Zoglin;
 import net.minecraft.world.entity.monster.Spider;
 import net.minecraft.world.entity.monster.Skeleton;
 import net.minecraft.world.entity.monster.Monster;
@@ -32,9 +35,12 @@ import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.AreaEffectCloud;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
@@ -42,6 +48,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.catlands.procedures.HealGolemProcedure;
 import net.mcreator.catlands.init.CatLandsModEntities;
 
 public class KotegoldengolemEntity extends Monster {
@@ -81,7 +88,9 @@ public class KotegoldengolemEntity extends Monster {
 		this.targetSelector.addGoal(10, new NearestAttackableTargetGoal(this, ZombieVillager.class, true, true));
 		this.targetSelector.addGoal(11, new NearestAttackableTargetGoal(this, Skeleton.class, true, true));
 		this.targetSelector.addGoal(12, new NearestAttackableTargetGoal(this, Spider.class, true, true));
-		this.goalSelector.addGoal(13, new RandomLookAroundGoal(this));
+		this.targetSelector.addGoal(13, new NearestAttackableTargetGoal(this, ZombifiedPiglin.class, true, true));
+		this.targetSelector.addGoal(14, new NearestAttackableTargetGoal(this, Zoglin.class, true, true));
+		this.goalSelector.addGoal(15, new RandomLookAroundGoal(this));
 	}
 
 	@Override
@@ -135,6 +144,21 @@ public class KotegoldengolemEntity extends Monster {
 	@Override
 	public boolean fireImmune() {
 		return true;
+	}
+
+	@Override
+	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
+		ItemStack itemstack = sourceentity.getItemInHand(hand);
+		InteractionResult retval = InteractionResult.sidedSuccess(this.level().isClientSide());
+		super.mobInteract(sourceentity, hand);
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Entity entity = this;
+		Level world = this.level();
+
+		HealGolemProcedure.execute(entity, sourceentity);
+		return retval;
 	}
 
 	public static void init() {

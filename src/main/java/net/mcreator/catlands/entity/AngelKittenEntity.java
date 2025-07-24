@@ -44,6 +44,7 @@ import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.AreaEffectCloud;
 import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.damagesource.DamageTypes;
@@ -66,6 +67,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.catlands.world.inventory.KittenGuiMenu;
+import net.mcreator.catlands.procedures.KittenTamingProcedure;
 import net.mcreator.catlands.init.CatLandsModEntities;
 
 import javax.annotation.Nullable;
@@ -272,6 +274,13 @@ public class AngelKittenEntity extends TamableAnimal {
 					this.setPersistenceRequired();
 			}
 		}
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Entity entity = this;
+		Level world = this.level();
+
+		KittenTamingProcedure.execute(entity, sourceentity);
 		return retval;
 	}
 

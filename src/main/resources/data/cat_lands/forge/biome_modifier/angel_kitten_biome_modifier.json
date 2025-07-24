@@ -3,7 +3,7 @@
   "biomes": "cat_lands:catlands",
   "spawners": {
     "type": "cat_lands:angel_kitten",
-    "weight": 20,
+    "weight": 15,
     "minCount": 2,
     "maxCount": 6
   }

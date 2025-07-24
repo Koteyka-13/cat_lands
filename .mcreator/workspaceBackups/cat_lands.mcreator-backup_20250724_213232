@@ -262,15 +262,37 @@
       }
     },
     {
-      "name": "KittensGui",
+      "name": "KittenGui",
       "type": "gui",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "kittens_gui",
+      "registry_name": "kitten_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/catlands/world/inventory/KittensGuiMenu.java",
-          "src/main/java/net/mcreator/catlands/client/gui/KittensGuiScreen.java"
+          "src/main/java/net/mcreator/catlands/client/gui/KittenGuiScreen.java",
+          "src/main/java/net/mcreator/catlands/world/inventory/KittenGuiMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "KittenTaming",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kitten_taming",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/catlands/procedures/KittenTamingProcedure.java"
         ]
       }
     }
@@ -313,7 +335,7 @@
       "item.cat_lands.angel_kitten_spawn_egg": "Angel Kitten Spawn Egg",
       "entity.cat_lands.angel_kitten": "Angel Kitten",
       "block.cat_lands.big_shiny_brick": "Big Shiny Brick",
-      "gui.cat_lands.kittens_gui.label_angel_kittens_inventory": "Angel kitten\u0027s inventory"
+      "gui.cat_lands.kitten_gui.label_angel_kittens_inventory": "Angel kitten\u0027s inventory"
     },
     "ru_ru": {
       "biome.cat_lands.catlands": "Catlands",
@@ -334,7 +356,7 @@
       "item.cat_lands.angel_kitten_spawn_egg": "Angel Kitten Spawn Egg",
       "entity.cat_lands.angel_kitten": "Angel Kitten",
       "block.cat_lands.big_shiny_brick": "Big Shiny Brick",
-      "gui.cat_lands.kittens_gui.label_angel_kittens_inventory": "Angel kitten\u0027s inventory"
+      "gui.cat_lands.kitten_gui.label_angel_kittens_inventory": "Angel kitten\u0027s inventory"
     }
   },
   "metadata": {

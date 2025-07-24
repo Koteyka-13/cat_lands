@@ -81,8 +81,7 @@
           "src/main/resources/data/cat_lands/forge/biome_modifier/kotegolem_biome_modifier.json",
           "src/main/java/net/mcreator/catlands/entity/KotegolemEntity.java"
         ]
-      },
-      "path": "~/mobs"
+      }
     },
     {
       "name": "KoteCopperGolemSpawn",
@@ -112,8 +111,7 @@
         "files": [
           "src/main/java/net/mcreator/catlands/procedures/KoteCopperGolemSpawnProcedure.java"
         ]
-      },
-      "path": "~/mobs"
+      }
     },
     {
       "name": "Artifact",
@@ -141,8 +139,7 @@
           "src/main/resources/assets/cat_lands/models/item/kotegoldengolem_spawn_egg.json",
           "src/main/java/net/mcreator/catlands/client/renderer/KotegoldengolemRenderer.java"
         ]
-      },
-      "path": "~/mobs"
+      }
     },
     {
       "name": "Artifactresipe",
@@ -234,8 +231,92 @@
           "src/main/java/net/mcreator/catlands/client/renderer/AngelKittenRenderer.java",
           "src/main/resources/data/cat_lands/forge/biome_modifier/angel_kitten_biome_modifier.json"
         ]
-      },
-      "path": "~/mobs"
+      }
+    },
+    {
+      "name": "BigShinyBrick",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_shiny_brick",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cat_lands/loot_tables/blocks/big_shiny_brick.json",
+          "src/main/resources/assets/cat_lands/models/block/big_shiny_brick.json",
+          "src/main/resources/assets/cat_lands/models/item/big_shiny_brick.json",
+          "src/main/java/net/mcreator/catlands/block/BigShinyBrickBlock.java",
+          "src/main/resources/assets/cat_lands/blockstates/big_shiny_brick.json"
+        ]
+      }
+    },
+    {
+      "name": "BigShinybrickresipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_shinybrickresipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cat_lands/recipes/big_shinybrickresipe.json"
+        ]
+      }
+    },
+    {
+      "name": "KittenGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kitten_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/catlands/client/gui/KittenGuiScreen.java",
+          "src/main/java/net/mcreator/catlands/world/inventory/KittenGuiMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "KittenTaming",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kitten_taming",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/catlands/procedures/KittenTamingProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "HealGolem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heal_golem",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/catlands/procedures/HealGolemProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -245,6 +326,7 @@
       "~CUSTOM:Catlands"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:BigShinyBrick",
       "~CUSTOM:Shinybrick"
     ],
     "BIOMES:minecraft:has_structure/stronghold": [
@@ -273,7 +355,9 @@
       "advancements.what_about_golems.descr": "Make a golem maker!",
       "advancements.what_about_golems.title": "What about Golems?",
       "item.cat_lands.angel_kitten_spawn_egg": "Angel Kitten Spawn Egg",
-      "entity.cat_lands.angel_kitten": "Angel Kitten"
+      "entity.cat_lands.angel_kitten": "Angel Kitten",
+      "block.cat_lands.big_shiny_brick": "Big Shiny Brick",
+      "gui.cat_lands.kitten_gui.label_angel_kittens_inventory": "Angel kitten\u0027s inventory"
     },
     "ru_ru": {
       "biome.cat_lands.catlands": "Catlands",
@@ -292,7 +376,9 @@
       "advancements.what_about_golems.descr": "Make a golem maker!",
       "advancements.what_about_golems.title": "What about Golems?",
       "item.cat_lands.angel_kitten_spawn_egg": "Angel Kitten Spawn Egg",
-      "entity.cat_lands.angel_kitten": "Angel Kitten"
+      "entity.cat_lands.angel_kitten": "Angel Kitten",
+      "block.cat_lands.big_shiny_brick": "Big Shiny Brick",
+      "gui.cat_lands.kitten_gui.label_angel_kittens_inventory": "Angel kitten\u0027s inventory"
     }
   },
   "metadata": {
@@ -304,6 +390,9 @@
       "src/main/java/net/mcreator/catlands/init/CatLandsModTabs.java",
       "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/catlands/init/CatLandsModBiomes.java",
+      "src/main/java/net/mcreator/catlands/init/CatLandsModScreens.java",
+      "src/main/java/net/mcreator/catlands/init/CatLandsModMenus.java",
+      "src/main/java/net/mcreator/catlands/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/catlands/init/CatLandsModBlocks.java",
       "src/main/java/net/mcreator/catlands/init/CatLandsModItems.java",
       "src/main/java/net/mcreator/catlands/init/CatLandsModEntities.java",
@@ -312,12 +401,7 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": [
-      {
-        "name": "mobs",
-        "children": []
-      }
-    ]
+    "children": []
   },
   "workspaceSettings": {
     "modid": "cat_lands",

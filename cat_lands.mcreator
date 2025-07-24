@@ -273,6 +273,50 @@
           "src/main/java/net/mcreator/catlands/world/inventory/KittenGuiMenu.java"
         ]
       }
+    },
+    {
+      "name": "KittenTaming",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kitten_taming",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/catlands/procedures/KittenTamingProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "HealGolem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heal_golem",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/catlands/procedures/HealGolemProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],

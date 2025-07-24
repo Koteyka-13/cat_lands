@@ -260,6 +260,19 @@
           "src/main/resources/data/cat_lands/recipes/big_shinybrickresipe.json"
         ]
       }
+    },
+    {
+      "name": "KittenGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kitten_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/catlands/client/gui/KittenGuiScreen.java",
+          "src/main/java/net/mcreator/catlands/world/inventory/KittenGuiMenu.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -299,7 +312,8 @@
       "advancements.what_about_golems.title": "What about Golems?",
       "item.cat_lands.angel_kitten_spawn_egg": "Angel Kitten Spawn Egg",
       "entity.cat_lands.angel_kitten": "Angel Kitten",
-      "block.cat_lands.big_shiny_brick": "Big Shiny Brick"
+      "block.cat_lands.big_shiny_brick": "Big Shiny Brick",
+      "gui.cat_lands.kitten_gui.label_angel_kittens_inventory": "Angel kitten\u0027s inventory"
     },
     "ru_ru": {
       "biome.cat_lands.catlands": "Catlands",
@@ -319,7 +333,8 @@
       "advancements.what_about_golems.title": "What about Golems?",
       "item.cat_lands.angel_kitten_spawn_egg": "Angel Kitten Spawn Egg",
       "entity.cat_lands.angel_kitten": "Angel Kitten",
-      "block.cat_lands.big_shiny_brick": "Big Shiny Brick"
+      "block.cat_lands.big_shiny_brick": "Big Shiny Brick",
+      "gui.cat_lands.kitten_gui.label_angel_kittens_inventory": "Angel kitten\u0027s inventory"
     }
   },
   "metadata": {
@@ -331,6 +346,9 @@
       "src/main/java/net/mcreator/catlands/init/CatLandsModTabs.java",
       "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/catlands/init/CatLandsModBiomes.java",
+      "src/main/java/net/mcreator/catlands/init/CatLandsModScreens.java",
+      "src/main/java/net/mcreator/catlands/init/CatLandsModMenus.java",
+      "src/main/java/net/mcreator/catlands/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/catlands/init/CatLandsModBlocks.java",
       "src/main/java/net/mcreator/catlands/init/CatLandsModItems.java",
       "src/main/java/net/mcreator/catlands/init/CatLandsModEntities.java",
